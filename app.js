@@ -15,3 +15,5 @@ inputs.forEach(input => {
   	input.parentNode.classList.remove("focus");
   });
 });
+
+// TODO: add theme toggle
