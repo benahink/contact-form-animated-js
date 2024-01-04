@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  --text-color: #000;
+  --main-hue: 260;
+  --main-color: hsl(var(--main-hue), 84%, 51%);
+  --nav-color: hsl(var(--main-hue), 17%, 79%);
+  --bg-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+header .container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: 65px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.logo .images {
+  display: gird;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.logo img {
+  height: 55px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-right: 0.3rem;
+}
+
+.logo h2 {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 900;
+  color: var(--text-color);
+  font-size: 1.55rem;
+  margin-top: 2px;
+  line-height: 1.1rem;
+}
+
+.logo h2 span {
+  color: #5e17eb;
+  text-transform: uppercase;
+}
+
+.logo h2 .logo-shop {
+  color: var(--text-color);
+}
+
+.nav-link {
+  margin-left: 5.5rem;
+  padding: 0 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--nav-color);
+}
+
+.nav-link:hover {
+  color: var(--main-color);
+}
+
+.nav-link.theme-toggle {
+  cursor: pointer;
+}
+
+.theme-toggle .fa-moon {
+  display: none;
+}
+
+.theme-toggle .fa-sun {
+  display: inline;
+}
+
+.contact {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--bg-color);
+}
+
+.contact .container {
+  height: 100vh;
+  min-height: 700px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.contact .container > div {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.left {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 65px 1.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.contact-heading h1 {
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 3.5rem;
+  line-height: 0.9;
+  white-space: nowrap;
+  margin-bottom: 1.2rem;
+}
+
