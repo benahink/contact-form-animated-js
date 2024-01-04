@@ -42,13 +42,38 @@
           <div class="form-wrapper">
             <div class="contact-heading">
               <h1>Let's work together<span>.</span></h1>
-              <p mail>Or reach us at: <a href="mailto:creativealas@gmail.com">coffeeshop@coffe.com</a></p>
+              <p class="text">Or reach us at: <a href="mailto:creativealas@gmail.com">coffeeshop@coffe.com</a></p>
             </div>
+            <form class="contact-form" action="index.html" method="post">
+              <div class="input-wrapper">
+                <input type="text" name="first-name" class="contact-input" autocomplete="off" required>
+                <label>First Name</label>
+                <i class="icon fa-regular fa-address-card"></i>
+              </div>
+              <div class="input-wrapper">
+                <input type="text" name="last-name" class="contact-input" autocomplete="off" required>
+                <label>Last Name</label>
+                <i class="icon fa-regular fa-address-card"></i>
+              </div>
+              <div class="input-wrapper w-100">
+                <input type="email" name="email" class="contact-input" autocomplete="off" required>
+                <label>Email</label>
+                <i class="icon fa-regular fa-envelope"></i>
+              </div>
+              <div class="input-wrapper text-area w-100">
+                <textarea name="message" class="contact-input" autocomplete="off" required></textarea>
+                <label>Message</label>
+                <i class="icon fa-solid fa-inbox"></i>
+              </div>
+            </form>
           </div>
         </div>
         <div class="right"></div>
       </div>
     </section>
   </main>
+
+  <!-- JAVASCRIPT -->
+  <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
